@@ -87,6 +87,17 @@ function App() {
                             onClick={() => DeviceManger.disconnect()}>Disconnect Device</button>}
             </p>
 
+            <h2>Firmware</h2>
+            <p>
+                <strong>Current version</strong><br />
+                Not flashed with Neon Timing firmware.
+            </p>
+            <p>
+                <button disabled={isDisabled} className="btn btn-outline btn-accent"
+                        onClick={() => DeviceManger.flash()}>Flash device with latest firmware
+                </button>
+            </p>
+
             <h2>Flag Events</h2>
             <div className="join">
                 <button disabled={isDisabled} className="btn btn-outline btn-accent join-item"
